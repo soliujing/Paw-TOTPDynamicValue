@@ -1,7 +1,7 @@
 var TOTPDynamicValue = function() {
 
-    // Input "number"
-    this.totp_key = 5;
+    // Input "TOTP key"
+    this.totp_key = "AAAABBBBCCCCDDDD";
 
     // Evaluate function: takes no params, should return the computer value
     this.evaluate = function() {
