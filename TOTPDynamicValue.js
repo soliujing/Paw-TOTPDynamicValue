@@ -1,3 +1,5 @@
+const TOTP = require('totp');
+
 var TOTPDynamicValue = function() {
 
     // Input "TOTP key"
@@ -6,13 +8,9 @@ var TOTPDynamicValue = function() {
     // Evaluate function: takes no params, should return the computer value
     this.evaluate = function() {
         var f = function(x) {
-            //relace below with your changes
-            // if (x == 0) {
-            //     return 1;
-            // }
-            // else {
-            //     return x * f(x - 1);
-            // }
+            const totp = new TOTP(x);
+            const code = await totp.gen();
+            return code;
         }
 
         return f(this.totp_key);
