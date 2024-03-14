@@ -1,5 +1,6 @@
-const TOTP = require('totp');
-
+// console.log("Hello JS.")
+const totp = require('./totp');
+// console.log("Loaded TOTP.")
 var TOTPDynamicValue = function() {
 
     // Input "TOTP key"
@@ -8,8 +9,8 @@ var TOTPDynamicValue = function() {
     // Evaluate function: takes no params, should return the computer value
     this.evaluate = function() {
         var f = function(x) {
-            const totp = new TOTP(x);
-            const code = await totp.gen();
+            const code = totp.getCode(x)
+            // console.log(code)
             return code;
         }
 
