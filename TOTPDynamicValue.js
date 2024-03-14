@@ -43,4 +43,4 @@ TOTPDynamicValue.inputs = [
 ]
 
 // Register this new Extension
-registerDynamicValueClass(FactorialDynamicValue);
+registerDynamicValueClass(TOTPDynamicValue);
