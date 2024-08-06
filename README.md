@@ -8,7 +8,7 @@ https://github.com/bestony/totp.js/
 #installation
 
 ```
-PATH_PAW_EXTENSIONS="~/Library/Containers/com.luckymarmot.Paw/Data/Library/Application Support/com.luckymarmot.Paw/Extensions"
+PATH_PAW_EXTENSIONS="$HOME/Library/Containers/com.luckymarmot.Paw/Data/Library/Application Support/com.luckymarmot.Paw/Extensions"
 NAME_TOTP_DYNAMIC="com.luckymarmot.PawExtensions.TOTPDynamicValue"
 REPO_URL="https://github.com/soliujing/Paw-TOTPDynamicValue.git"
 mkdir -p $PAW_EXTENSIONS
